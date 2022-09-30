@@ -69,20 +69,17 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_29_120026) do
     t.string "model"
     t.string "brand"
     t.integer "year"
-    t.string "type"
+    t.string "type_car"
     t.integer "passangers"
     t.integer "price"
     t.integer "suitcase_capacity"
     t.string "gearbox"
-    t.bigint "users_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["users_id"], name: "index_vehicles_on_users_id"
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
   add_foreign_key "bookings", "users", column: "users_id"
   add_foreign_key "bookings", "vehicles", column: "vehicles_id"
-  add_foreign_key "vehicles", "users", column: "users_id"
 end
