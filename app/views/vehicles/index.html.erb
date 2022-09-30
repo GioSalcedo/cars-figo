@@ -1,14 +1,12 @@
 <%= render "shared/search" %>
 <%= render "shared/ride" %>
+
 <% @vehicles.each do |vehicle| %>
+  <p><%= vehicle.year %></p>
   <p><%= vehicle.model %></p>
   <p><%= vehicle.brand %></p>
-  <p><%= vehicle.year %></p>
-  <p><%= vehicle.tpocar %></p>
-  <p><%= vehicle.passangers %></p>
   <p><%= vehicle.price %></p>
-  <p><%= vehicle.suitcase_capacity %></p>
-  <p><%= vehicle.gearbox %></p>
 <% end %>
+
 <%= render "shared/about" %>
 <%= render "shared/newsletter" %>
