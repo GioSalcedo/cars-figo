@@ -4,7 +4,7 @@ class CreateVehicles < ActiveRecord::Migration[7.0]
       t.string :model
       t.string :brand
       t.integer :year
-      t.string :type
+      t.string :type_car
       t.integer :passangers
       t.integer :price
       t.integer :suitcase_capacity
