@@ -2,17 +2,17 @@
 <%= render "shared/ride" %>
 
 <div class="services-container">
-<div class="box">
-<div class="box-img">
-<img src="#" alt="">
-</div>
-<% @vehicles.each do |vehicle| %>
-  <p><%= vehicle.year %></p>
-  <h3><%= vehicle.model %></h3><h3> - <%= vehicle.brand %></h3>
-  <h2>$<%= vehicle.price %></h2> <span><h2>/ mes</h2></span>
-<% end %>
-</div>
-</div>
+  <div class="box">
+    <div class="box-img">
+      <img src="#" alt="">
+    </div>
+    <% @vehicles.each do |vehicle| %>
+      <p><%= vehicle.year %></p>
+      <h3><%= vehicle.model %></h3><h3> - <%= vehicle.brand %></h3>
+      <h2>$<%= vehicle.price %></h2> <span><h2>/ mes</h2></span>
+    <% end %>
+    </div>
+  </div>
 
 <%= render "shared/about" %>
 <%= render "shared/newsletter" %>
