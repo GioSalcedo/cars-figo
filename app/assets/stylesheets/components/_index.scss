@@ -4,6 +4,7 @@
 @import "form_legend_clear";
 @import "navbar";
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css');
 *{
     margin: 0;
     padding: 0;
@@ -54,7 +55,7 @@ header{
     padding: 15px 100px;
 }
 
-.logo{
+.logo {
     width: 40px;
 }
 
@@ -124,20 +125,19 @@ header{
     background: var(--second-color);
 }
 
-// .home{
-//     width: 100%;
-//     min-height: 100vh;
-//     position: relative;
-//     background: url(img/Car\ Website\ –\ 1@2x.png);
-//     background-repeat: no-repeat;
-//     background-position: center right;
-//     background-size: cover;
-//     display: grid;
-//     align-items: center;
-//     grid-template-columns: repeat(2, 1fr);
-//     padding: 50px 100px;
-
-// }
+.home {
+    width: 100%;
+     min-height: 100vh;
+     position: relative;
+     background-image: url('background.png');
+     background-repeat: no-repeat;
+     background-position: center right;
+     background-size: cover;
+     display: grid;
+     align-items: center;
+     grid-template-columns: repeat(2, 1fr);
+     padding: 50px 100px;
+}
 
 .text h1{
     padding: 30px;
