@@ -1,3 +1,12 @@
-<h1>Vehicles#index</h1>
+<%= render "shared/search" %>
+<%= render "shared/ride" %>
 
-<%= cl_image_tag @vehicles.photo.key, height: 300, width: 400, crop: :fill %>
+<% @vehicles.each do |vehicle| %>
+  <p><%= vehicle.year %></p>
+  <p><%= vehicle.model %></p>
+  <p><%= vehicle.brand %></p>
+  <p><%= vehicle.price %></p>
+<% end %>
+
+<%= render "shared/about" %>
+<%= render "shared/newsletter" %>
