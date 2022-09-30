@@ -8,15 +8,15 @@
 # llenar base de datos
 # puts "Generando vehiculos"
 
-# 10.times do
-#  Vehicle.create(
-#    model: Faker::Vehicle.make_and_model,
-#    brand: Faker::Vehicle.make,
-#    year: Faker::Vehicle.year,
-#    type: Faker::Vehicle.car_type,
-#    passangers: (4..10).to_a.sample,
-#    price: (1000..5000).to_a.sample,
-#    suitcase_capacity: (2..4).to_a.sample,
-#    gearbox: Faker::Vehicle.transmission
-#  )
-# end
+10.times do
+  Vehicle.create(
+   model: Faker::Vehicle.make_and_model,
+    brand: Faker::Vehicle.make,
+    year: Faker::Vehicle.year,
+    tpocar: Faker::Vehicle.car_type,
+    passangers: (4..10).to_a.sample,
+    price: (1000..5000).to_a.sample,
+    suitcase_capacity: (2..4).to_a.sample,
+    gearbox: Faker::Vehicle.transmission
+  )
+end
