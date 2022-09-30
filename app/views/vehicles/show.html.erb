@@ -1,2 +1,15 @@
-<h1>Vehicles#show</h1>
-<p>Find me in app/views/vehicles/show.html.erb</p>
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-md-6">
+  <p><%= @vehicle.model %></p>
+  <p><%= @vehicle.brand %></p>
+  <p><%= @vehicle.year %></p>
+  <p><%= @vehicle.type_car %></p>
+  <p><%= @vehicle.passangers %></p>
+  <p><%= @vehicle.price %></p>
+  <p><%= @vehicle.suitcase_capacity %></p>
+  <p><%= @vehicle.gearbox %></p>
+</div>
+</div>
+</div>
+<%= link_to "Regresar", vehicles_path, class: "h3" %>
