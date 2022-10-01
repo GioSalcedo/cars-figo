@@ -29,12 +29,13 @@
             </div>
           </li>
         <% else %>
+
+          <ul class="header-btn btn-2">
+            <%= link_to "Registrarse", new_user_registration_path , class: "sign-up" %>
+          </ul>
           <ul class="header-btn btn-2">
             <%= link_to "Iniciar Sesión", new_user_session_path, class: "sign-in" %>
           </ul>
-          <ul class="header-btn btn-2">
-                      <%= link_to "Registrarse", new_user_registration_path , class: "sign-in" %>
-                      </ul>
         <% end %>
       </ul>
     </div>
