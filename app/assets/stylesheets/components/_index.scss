@@ -630,3 +630,17 @@ services-container .box h2 span{
   grid-template-columns: repeat(2, 1fr);
   padding: 50px 100px;
 }
+
+.ed-user-new-form{
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  background-image: url('reg.png');
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: cover;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 50px 100px;
+}
