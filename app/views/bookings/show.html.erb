@@ -1,9 +1,10 @@
-<h1>Bookings#show</h1>
-<p>Find me in app/views/bookings/show.html.erb</p>
+<div class="car-title">
+  <h1>Mis Reservas</h1>
+</div>
 
 
 <div class="services-container">
-<%= @bookings.each do |bookin|%>
+<%= @bookings.each do |booking|%>
     <div class="box">
     <div class="box-img">
       <img src="..." alt="...">
@@ -12,7 +13,7 @@
         <h2>- <%= bookin.vehicles_id%></h2>
         <h2>- <%= bookin.s_date%></h2>
         <h2>- <%= bookin.f_date%></h2>
-        <h2>- <%= link_to bookin.vehicles_id, bookin %></h2>
+        <h2>- <%= link_to bookin.vehicles_id, booking %></h2>
     </div>
   <% end %>
 </div>
