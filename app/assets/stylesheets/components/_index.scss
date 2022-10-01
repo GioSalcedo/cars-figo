@@ -532,10 +532,58 @@ services-container .box h2 span{
   background: var(--second-color);
 }
 
-.btn{
+.btn-reserve{
   display: flex;
   justify-content: right;
   margin: 0px 20px;
   padding: 0px 20px;
 
+}
+
+.car-title{
+  display: flex;
+  justify-content: left;
+  margin: 0px 20px;
+  padding: 0px 50px;
+}
+
+.car-img {
+  padding-left: 200px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: rgba(0, 0, 0, 0.1);
+}
+
+.details{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: rigth;
+  align-items: left;
+}
+
+.car-title h1{
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--main-color);
+  margin: 0.2rem 0 o.5rem;
+  text-decoration: none;
+}
+
+.all-details p{
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--text-color);
+  margin: 0.2rem 0 o.5rem;
+  text-decoration: none;
+}
+
+
+#vechicle{
+  margin: 10px 20px;
+  padding: 10px 20px;
 }
