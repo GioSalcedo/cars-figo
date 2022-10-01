@@ -1,19 +1,26 @@
-<div class="container">
-  <div class="row justify-content-center">
-    <div class="col-md-6">
-      <p><%= @vehicle.model %></p>
-      <p><%= @vehicle.brand %></p>
-      <p><%= @vehicle.year %></p>
-      <p><%= @vehicle.type_car %></p>
-      <p><%= @vehicle.passangers %></p>
-      <p><%= @vehicle.price %></p>
-      <p><%= @vehicle.suitcase_capacity %></p>
-      <p><%= @vehicle.gearbox %></p>
+<section id="vehicle">
+<div class="car-title">
+  <h1><%= @vehicle.model %> | <%= @vehicle.brand %></h1>
+</div>
+
+<div class="car-img">
+    <%= image_tag("lacross.webp") %>
+  <div class="details">
+    <div class="all-details">
+      <div class="box">
+        <p>Modelo: <%= @vehicle.year %></p>
+        <p>Tipo de vehiculo: <%= @vehicle.type_car %></p>
+        <p>Capacidad: <%= @vehicle.passangers %> pasajeros</p>
+        <p>Precio: $<%= @vehicle.price %> / mes</p>
+        <p>Capacidad de maletero: <%= @vehicle.suitcase_capacity %> dl</p>
+        <p>Tipo de caja de cambios: <%= @vehicle.gearbox %></p>
+      </div>
     </div>
   </div>
 </div>
 
-<div class="btn">
+
+<div class="btn-reserve">
 <div class="action-btn">
   <%= link_to "Regresar", vehicles_path, class: "sign-in" %>
 </div>
@@ -21,3 +28,4 @@
   <%= link_to "Reservar ahora", new_vehicle_booking_path(@vehicle, @booking), class: "sign-in" %>
 </div>
 </div>
+</section>
