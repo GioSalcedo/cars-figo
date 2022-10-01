@@ -45,12 +45,12 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_29_120026) do
   create_table "bookings", force: :cascade do |t|
     t.date "s_date"
     t.date "f_date"
-    t.bigint "users_id", null: false
-    t.bigint "vehicles_id", null: false
+    t.bigint "user_id", null: false
+    t.bigint "vehicle_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["users_id"], name: "index_bookings_on_users_id"
-    t.index ["vehicles_id"], name: "index_bookings_on_vehicles_id"
+    t.index ["user_id"], name: "index_bookings_on_user_id"
+    t.index ["vehicle_id"], name: "index_bookings_on_vehicle_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -80,6 +80,6 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_29_120026) do
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
-  add_foreign_key "bookings", "users", column: "users_id"
-  add_foreign_key "bookings", "vehicles", column: "vehicles_id"
+  add_foreign_key "bookings", "users"
+  add_foreign_key "bookings", "vehicles"
 end
