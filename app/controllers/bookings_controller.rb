@@ -7,6 +7,9 @@ class BookingsController < ApplicationController
 
   def show; end
 
+  def new
+  end
+
   def create
     @booking = Booking.new(booking_params)
     if booking.save
