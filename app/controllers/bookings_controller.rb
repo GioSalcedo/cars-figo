@@ -8,12 +8,17 @@ class BookingsController < ApplicationController
   def show; end
 
   def new
+    @booking = Booking.new
+    @vehicle = Vehicle.find(params[:vehicle_id])
   end
 
   def create
     @booking = Booking.new(booking_params)
-    if booking.save
-      redirect_to @booking
+    @vehicle = Vehicle.find(params[:vehicle_id])
+    @booking.vehicle = @vehicle
+    @booking.user = current_user
+    if @booking.save
+      redirect_to vehicle_path(@vehicle)
     else
       render :new
     end
@@ -37,7 +42,7 @@ class BookingsController < ApplicationController
   private
 
   def booking_params
-    params.require(:booking).permit(:vehicle_id, :user_id, :start_date, :end_date)
+    params.require(:booking).permit(:s_date, :f_date)
   end
 
   def set_booking

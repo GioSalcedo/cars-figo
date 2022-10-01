@@ -1,6 +1,6 @@
 class Booking < ApplicationRecord
-  belongs_to :users
-  belongs_to :vehicles
-  validates_presence_of :start_date, :end_date, :user_id, :vehicle_id
-  validates_uniqueness_of :vehicle_id, scope: [:start_date, :end_date]
+  belongs_to :user
+  belongs_to :vehicle
+  validates_presence_of :s_date, :f_date, :user_id, :vehicle_id
+  validates_uniqueness_of :vehicle_id, scope: [:s_date, :f_date]
 end
