@@ -54,6 +54,18 @@ header{
     padding: 15px 100px;
 }
 
+.navbar-style{
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #eeeff1;
+  padding: 15px 100px;
+}
+
 .logo {
     width: 40px;
 }
@@ -72,6 +84,7 @@ header{
     padding: 10px 20px;
     color: var(--text-color);
     font-weight: 500;
+    text-decoration: none;
 }
 
 .navbar a::after{
@@ -100,6 +113,7 @@ header{
     padding: 10px 20px;
     color: var(--text-color);
     font-weight: 500;
+    text-decoration: none;
 }
 
 #menu-icon{
@@ -302,6 +316,21 @@ header{
     margin: 0.2rem 0 o.5rem;
 }
 
+.services-container .box h3{
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--main-color);
+  margin: 0.2rem 0 o.5rem;
+}
+
+.services-container .box a{
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--main-color);
+  margin: 0.2rem 0 o.5rem;
+  text-decoration: none;
+}
+
 services-container .box h2 span{
     font-size: 0,8rem;
     font-weight: 500;
@@ -478,4 +507,35 @@ services-container .box h2 span{
     background: var(--second-color);
     color: #fff;
     text-align: center;
+}
+
+.action-btn a{
+  padding: 10px 20px;
+  color: var(--text-color);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.action-btn .sign-in{
+  background: var(--gradient);
+  color: #fff;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  display: inline-block;
+  inline-size: 100%;
+
+}
+
+.action-btn .sign-in:hover{
+  background: var(--second-color);
+}
+
+.btn{
+  display: flex;
+  justify-content: right;
+  margin: 0px 20px;
+  padding: 0px 20px;
+
 }

@@ -12,5 +12,12 @@
     </div>
   </div>
 </div>
-<%= link_to "Regresar", vehicles_path, class: "h3" %>
-<%= link_to "Reserva", new_vehicle_booking_path(@vehicle, @booking), class: "h3" %>
+
+<div class="btn">
+<div class="action-btn">
+  <%= link_to "Regresar", vehicles_path, class: "sign-in" %>
+</div>
+<div class="action-btn">
+  <%= link_to "Reservar ahora", new_vehicle_booking_path(@vehicle, @booking), class: "sign-in" %>
+</div>
+</div>
