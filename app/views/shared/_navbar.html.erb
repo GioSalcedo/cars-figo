@@ -18,11 +18,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto">
         <% if user_signed_in? %>
-          <li class="nav-item active">
-            <%= link_to "Home", "#", class: "nav-link" %>
-          </li>
-          <li class="nav-item">
-            <%= link_to "Messages", "#", class: "nav-link" %>
+        <%= link_to "Cerrar Sesión", destroy_user_session_path, data: {turbo_method: :delete}, class: "dropdown-item" %>
           </li>
           <li class="nav-item dropdown">
             <%= image_tag "https://kitt.lewagon.com/placeholder/users/ssaunier", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
@@ -33,9 +29,12 @@
             </div>
           </li>
         <% else %>
-          <li class="header-btn">
+          <li class="header-btn btn-2">
             <%= link_to "Iniciar Sesión", new_user_session_path, class: "sign-in" %>
           </li>
+          <li class="header-btn btn-2">
+                      <%= link_to "Registrarse", new_user_registration_path , class: "sign-in" %>
+                      </li>
         <% end %>
       </ul>
     </div>
