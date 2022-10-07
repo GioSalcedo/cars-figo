@@ -4,11 +4,9 @@
 <div class="book-form">
   <div class="row justify-content-center">
     <div class="col-md-6">
-  <%= simple_form_for [@vehicle, @booking] do |f| %>
-  <%= f.input :s_date, as: :date, order: [:day, :month, :year]%>
-  <%= f.input :f_date, as: :date, order: [:day, :month, :year] %>
-  <%= f.button :submit %>
-<% end %>
+      <%= simple_form_for [@vehicle, @booking] do |f| %> <%= f.input :s_date,
+      as: :date, order: [:day, :month, :year]%> <%= f.input :f_date, as: :date,
+      order: [:day, :month, :year] %> <%= f.button :submit %> <% end %>
     </div>
   </div>
 </div>
