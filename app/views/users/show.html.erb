@@ -1,5 +1,23 @@
+<section class="reservation-card">
 <div class="car-title" >
   <h1>
     Hola, <%= @user.email %>
   </h1>
 </div>
+
+<div class="subtitle">
+  <H2>Estas son las reservas que has realizado.</H2>
+</div>
+
+<div class="reservations-card">
+  <% @user.bookings.each do |booking| %>
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Reservaste del dia <%= booking.s_date %> al <%= booking.f_date %></h5>
+        <h5 class="card-text">El vehículo <%= booking.vehicle.brand %> <%= booking.vehicle.model %></h5>
+        <a href="#" class="btn btn-primary">Ver detalles</a>
+      </div>
+  <% end %>
+</div>
+
+</section>

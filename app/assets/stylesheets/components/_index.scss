@@ -647,3 +647,25 @@ services-container .box h2 span{
   grid-template-columns: repeat(2, 1fr);
   padding: 50px 100px;
 }
+
+
+.subtitle {
+  display: flex;
+  justify-content: left;
+  margin: 0px 20px;
+  padding: 10px 50px;
+}
+
+
+.reservations-card {
+  margin: 0px 20px;
+  padding: 10px 50px;
+  border: 0ch;
+}
+
+
+.btn-edit{
+  margin: 10px;
+  justify-content: center;
+
+}
