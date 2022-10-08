@@ -7,11 +7,13 @@
       <h1>Mira los vehiculos que tenemos para ti <br> De las mejores marcas </h1>
   </div>
 
+
+
 <div class="services-container">
   <% @vehicles.each do |vehicle| %>
     <div class="box">
     <div class="box-img">
-      <%= image_tag("lacross.webp") %>
+    <%= image_tag("lacross.webp") %>
     </div>
         <h2>- <%= vehicle.brand %></h2>
         <h2><%= link_to vehicle.model, vehicle %></h2>

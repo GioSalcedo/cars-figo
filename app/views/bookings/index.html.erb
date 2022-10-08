@@ -1,15 +1,13 @@
 <div class="container">
 <h1>My reservations</h1>
     <% @bookings.each do |booking| %>
-      <div class="card">
-        <div class="card-body">
-          <ul>
-            <p>Lugar: <%= booking.vahicle_id %></p>
-            <p>Reservado desde: <%= booking.s_date %></p>
-            <p>Hasta: <%= booking.f_date %></p>
-          </ul>
-        </div>
+<div class="reservations-card">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Reservaste del dia <%= booking.s_date %> al <%= booking.f_date %></h5>
+        <h5 class="card-text">El vehículo <%= booking.vehicle.brand %> <%= booking.vehicle.model %></h5>
+        <a href="#" class="btn btn-primary">Ver detalles</a>
       </div>
-    <% end %>
+  <% end %>
 </div>
 <%= link_to "Regresar", root_path, class:"btn btn-success"%>
