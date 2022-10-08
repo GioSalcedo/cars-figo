@@ -1,8 +1,22 @@
-<div>
-  <h1>Mis Reservas</h1>
+<Section>
+
+<div class="container">
+<div class="car-title">
+<h1>Mis reservas</h1>
+
 </div>
-        <%= @booking.user_id %>
-        <%= @booking.vehicle_id %>
+    <div class="card">
+      <div class="card-body">
         <%= @booking.s_date %>
+        <br>
+        <br>
         <%= @booking.f_date %>
+          </div>
+      </div>
+      <%= link_to "Back", user_bookings_path, class:"action-btn sign-in text-center" %>
+      <!--<%= link_to "Update", user_bookings_path, class:"action-btn sign-in text-center" %>
+      <%= link_to "Delete", user_bookings_path, method: :delete, class:"action-btn sign-in text-center" %>-->
 </div>
+
+
+</Section>

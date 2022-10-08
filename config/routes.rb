@@ -10,6 +10,6 @@ Rails.application.routes.draw do
   end
 
   resources :users, only: [:show] do
-    resources :bookings, only: %i[index show]
+    resources :bookings, only: %i[index show update destroy]
   end
 end
