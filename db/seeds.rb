@@ -17,6 +17,11 @@
     passangers: (4..10).to_a.sample,
     price: (1000..5000).to_a.sample,
     suitcase_capacity: (2..4).to_a.sample,
-    gearbox: Faker::Vehicle.transmission,
+    gearbox: Faker::Vehicle.transmission
   )
 end
+
+User.create(
+  email: 'figoprueba@gmail.com',
+  password: '123456'
+)
