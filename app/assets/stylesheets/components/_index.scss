@@ -157,10 +157,12 @@ header{
     padding: 30px;
     font-size: 3.5rem;
     letter-spacing: 2px;
+    font-weight: 700;
 }
 
 .text span{
     color: var(--main-color);
+    font-weight: 700;
 }
 
 .text p{
@@ -544,7 +546,8 @@ services-container .box h2 span{
   display: flex;
   justify-content: left;
   margin: 0px 20px;
-  padding: 0px 50px;
+  padding: 10px 50px;
+  z-index: 99999;
 }
 
 .car-img {
