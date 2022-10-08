@@ -1,13 +1,29 @@
+
 <div class="container">
-<h1>My reservations</h1>
+<div class="car-title">
+<h1>Mis reservas</h1>
+</div>
+
+<div class="reservations-card action-btn sign-in">
     <% @bookings.each do |booking| %>
-<div class="reservations-card">
     <div class="card">
       <div class="card-body">
         <h5 class="card-title">Reservaste del dia <%= booking.s_date %> al <%= booking.f_date %></h5>
         <h5 class="card-text">El vehículo <%= booking.vehicle.brand %> <%= booking.vehicle.model %></h5>
-        <a href="#" class="btn btn-primary">Ver detalles</a>
+        <div class="btn-group" role="group" aria-label="Basic example">
+        <%= link_to "Detalles", user_booking_path(current_user,booking), class:"action-btn sign-in text-center" %>
+        </div>
       </div>
+    </div>
+
+
   <% end %>
+
+  <div class="action-btn sign-in btn-edit">
+  <%= link_to "Regresar", root_path, class:"action-btn sign-in text-center" %>
+  </div>
 </div>
-<%= link_to "Regresar", root_path, class:"btn btn-success"%>
+
+
+
+</Section>
