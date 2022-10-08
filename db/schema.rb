@@ -74,6 +74,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_29_120026) do
     t.integer "price"
     t.integer "suitcase_capacity"
     t.string "gearbox"
+    t.string "pinture"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

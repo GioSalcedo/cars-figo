@@ -9,6 +9,7 @@ class CreateVehicles < ActiveRecord::Migration[7.0]
       t.integer :price
       t.integer :suitcase_capacity
       t.string :gearbox
+      t.string :pinture
 
       t.timestamps
     end
