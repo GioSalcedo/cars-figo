@@ -1,17 +1,18 @@
-<Section>
-
+<section>
 <div class="container">
 <div class="car-title">
-<h1>Mis reservas</h1>
+<h1>Mis reserva</h1>
+</div>
 
 </div>
     <div class="card">
       <div class="card-body">
-        <%= @booking.s_date %>
+
+       <p>Tu reserva inicia el:  <%= @booking.s_date %> </p>
         <br>
         <br>
-      
-        <%= @booking.f_date %>
+
+      <p>Tu reserva termina el:   <%= @booking.f_date %> </p>
           </div>
       </div>
 </div>
